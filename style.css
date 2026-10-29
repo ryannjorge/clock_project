@@ -1,0 +1,200 @@
+/* ==========================================================================
+   1. RESET E CONFIGURAÇÕES GERAIS (UNIFICADO)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: #d6d4d4; /* Cor de fundo padrão */
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    min-height: 100vh;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* ==========================================================================
+   2. CONTAINER PRINCIPAL (CARD QUE UNE TUDO)
+   ========================================================================== */
+main, .quadro {
+    background-color: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* ==========================================================================
+   3. PRIMEIRO ARQUIVO (RELÓGIO)
+   ========================================================================== */
+.card, #box1 {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px; /* Espaçamento abaixo do relógio */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+#clock {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+/* ==========================================================================
+   4. SEGUNDO ARQUIVO (ENTRADA NO EVENTO)
+   ========================================================================== */
+#box2 {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px; /* Espaçamento abaixo da verificação de idade */
+    transition: color 0.3s ease, 0.3s ease;
+}
+
+#box2 h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+input {
+    width: 130px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    padding: 11px 14px;
+    background-color: #b83e38;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px; /* Espaço horizontal entre input e botão */
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #922f2a;
+}
+
+#resultado {
+    margin-top: 10px;
+    min-height: 20px;
+    font-weight: bold;
+}
+
+.dark #resultado {
+    color: #ffffff;  
+}
+
+/* ==========================================================================
+   5. TERCEIRO ARQUIVO (APARÊNCIA DO SITE)
+   ========================================================================== */
+#box3 {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 25px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#box3 h2 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+
+/* ==========================================================================
+   6. REGRAS DO TEMA ESCURO (DARK MODE ATUALIZADO)
+   ========================================================================== */
+.dark {
+    background-color: #121212; /* Fundo geral da tela escuro */
+}
+
+/* O card principal muda para cinza escuro */
+.dark main, .dark .quadro {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Todos os textos principais mudam para branco */
+.dark h1,
+.dark h2,
+.dark h3,
+.dark .card h2,
+.dark #box2 h1,
+.dark #box2 h2,
+.dark #box2 h3,
+.dark #box3 h1,
+.dark #box3 h2,
+.dark #clock,
+.dark label {
+    color: #ffffff;
+}
+
+/* Os blocos internos ganham uma cor cinza um pouco mais clara */
+.dark .card,
+.dark #box1,
+.dark #box2,
+.dark #box3 {
+    background-color: #2a2a2a;
+    border-color: #3d3d3d;
+}
+
+/* Customização do botão de trocar tema no modo escuro */
+.dark #botaoTema {
+    background-color: #17dffa;
+    color: #000000;
+}
+
+.dark #botaoTema:hover {
+    background-color: #17dffa;
+}
+
+
+.dark button {
+    background-color: #17dffa !important; /* Muda o fundo do botão vermelho para azul cian */
+    color: #000000 !important;            /* Deixa o texto 'Verificar' preto para dar leitura */
+}
+
+.dark button:hover {
+    background-color: #13b8cf !important; /* Tom de azul um pouco mais escuro ao passar o mouse */
+}

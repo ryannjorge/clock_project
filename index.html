@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Relógio Digital Centralizado</title>
+  
+  <!-- Vincula o CSS externo -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Vincula o JavaScript externo -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<main>
+
+  <!-- Estrutura do Card -->
+  <div class="card">
+    <h2>Horário Atual</h2>
+    <div id="clock"></div>
+  </div>
+
+
+
+<!-- SEGUNDO ARQUIVO-->
+ <div class="quadro">
+        <h2>Entrada no evento</h2>
+
+        <label for="idade">Informe sua idade:</label>
+
+        <input
+            type="number"
+            id="idade"
+            placeholder="Sua idade"
+            min="0"
+            step="1"
+        >
+
+        <button type="button" id="botaoVerificar">
+            Verificar
+        </button>
+ 
+        <!-- O JavaScript mostrará a mensagem aqui. -->
+        <p id="resultado" aria-live="polite"></p>
+      </div>
+
+        
+<!--TERCEIRO ARQUIVO -->
+      <div id="box3">
+            <h2>Aparência do site</h2>
+            <button id="botaoTema">Mudar tema</button>
+        </div>
+
+
+
+ </main>
+</body>
+</html>
